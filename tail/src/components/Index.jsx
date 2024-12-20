@@ -5,7 +5,7 @@ const UserList = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch user data from the local JSON file (public folder)
+  
   useEffect(() => {
     fetch('/user_data.json')
       .then(response => response.json())
